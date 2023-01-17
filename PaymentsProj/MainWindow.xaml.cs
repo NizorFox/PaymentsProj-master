@@ -29,8 +29,8 @@ namespace PaymentsProj
             };
             ChartPayments.Series.Add(currentSeries);
             ComboUsers.ItemsSource = db.context.Users.ToList();
-            //ComboUsers.DisplayMemberPath = "last_name";
-            //ComboUsers.SelectedValuePath = "id_user";
+            ComboUsers.DisplayMemberPath = "last_name";
+            ComboUsers.SelectedValuePath = "id_user";
             ComboChartTypes.ItemsSource = Enum.GetValues(typeof(SeriesChartType));
             
         }
